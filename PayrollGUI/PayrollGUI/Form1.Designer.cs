@@ -37,6 +37,10 @@
             this.txt_entry2 = new System.Windows.Forms.TextBox();
             this.txt_entry3 = new System.Windows.Forms.TextBox();
             this.txt_entry4 = new System.Windows.Forms.TextBox();
+            this.txt_gross = new System.Windows.Forms.TextBox();
+            this.txt_netPay = new System.Windows.Forms.TextBox();
+            this.txt_stateTax = new System.Windows.Forms.TextBox();
+            this.txt_fedTax = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_calculate
@@ -47,6 +51,7 @@
             this.btn_calculate.TabIndex = 0;
             this.btn_calculate.Text = "Calculate";
             this.btn_calculate.UseVisualStyleBackColor = true;
+            this.btn_calculate.Click += new System.EventHandler(this.btn_calculate_Click);
             // 
             // label1
             // 
@@ -112,11 +117,43 @@
             this.txt_entry4.Size = new System.Drawing.Size(100, 20);
             this.txt_entry4.TabIndex = 8;
             // 
+            // txt_gross
+            // 
+            this.txt_gross.Location = new System.Drawing.Point(45, 271);
+            this.txt_gross.Name = "txt_gross";
+            this.txt_gross.Size = new System.Drawing.Size(110, 20);
+            this.txt_gross.TabIndex = 9;
+            // 
+            // txt_netPay
+            // 
+            this.txt_netPay.Location = new System.Drawing.Point(196, 339);
+            this.txt_netPay.Name = "txt_netPay";
+            this.txt_netPay.Size = new System.Drawing.Size(108, 20);
+            this.txt_netPay.TabIndex = 10;
+            // 
+            // txt_stateTax
+            // 
+            this.txt_stateTax.Location = new System.Drawing.Point(45, 339);
+            this.txt_stateTax.Name = "txt_stateTax";
+            this.txt_stateTax.Size = new System.Drawing.Size(110, 20);
+            this.txt_stateTax.TabIndex = 11;
+            // 
+            // txt_fedTax
+            // 
+            this.txt_fedTax.Location = new System.Drawing.Point(196, 271);
+            this.txt_fedTax.Name = "txt_fedTax";
+            this.txt_fedTax.Size = new System.Drawing.Size(108, 20);
+            this.txt_fedTax.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 333);
+            this.ClientSize = new System.Drawing.Size(348, 391);
+            this.Controls.Add(this.txt_fedTax);
+            this.Controls.Add(this.txt_stateTax);
+            this.Controls.Add(this.txt_netPay);
+            this.Controls.Add(this.txt_gross);
             this.Controls.Add(this.txt_entry4);
             this.Controls.Add(this.txt_entry3);
             this.Controls.Add(this.txt_entry2);
@@ -145,6 +182,10 @@
         private System.Windows.Forms.TextBox txt_entry2;
         private System.Windows.Forms.TextBox txt_entry3;
         private System.Windows.Forms.TextBox txt_entry4;
+        private System.Windows.Forms.TextBox txt_gross;
+        private System.Windows.Forms.TextBox txt_netPay;
+        private System.Windows.Forms.TextBox txt_stateTax;
+        private System.Windows.Forms.TextBox txt_fedTax;
     }
 }
 
